@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.context_processor
 def site_config():
-    return dict(support_email=os.getenv('SUPPORT_EMAIL', 'support@girogato.com'),
+    return dict(support_email=os.getenv('SUPPORT_EMAIL', 'support@girogato.com, hello@xpresim.com'),
                 ios_url=os.getenv('IOS_APP_URL', ''), android_url=os.getenv('ANDROID_APP_URL', ''),
                 privacy_updated='October 20, 2026')
 

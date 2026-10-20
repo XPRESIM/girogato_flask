@@ -23,7 +23,7 @@ Visit http://localhost:8080.
 ## Before launch
 - Replace the placeholder support email with a working mailbox using `SUPPORT_EMAIL` in app.yaml env_variables or code.
 - Set `IOS_APP_URL` and `ANDROID_APP_URL` to official store listing links when available.
-- **Review and customize the privacy policy** after auditing Firebase SDKs (Analytics, Crashlytics, Auth, etc.), advertising SDKs, consent, retention, children's audience, publisher identity, and actual data practices. The policy is provisional and must not be published as final without this review.
+- The policy now names Firebase Analytics and Firebase Crashlytics and confirms no in-game ads. Before release, verify actual SDK data practices, consent settings, Firebase retention configuration, the intended age audience, legal publisher identity, and compliance with App Store privacy declarations.
 - Complete Apple App Privacy declarations consistent with the shipped app.
 - If you enable website analytics, update the website privacy disclosure.
 
