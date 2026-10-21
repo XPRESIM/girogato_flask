@@ -31,4 +31,16 @@ def sitemap():
     body='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{url}</loc></url>' for url in urls)+'</urlset>'
     return Response(body, mimetype='application/xml')
 
+from flask import jsonify
+
+@app.get("/api/app-version")
+def app_version():
+    return jsonify({
+        "ios": {
+            "latestVersion": "1.0.0",
+            "minimumVersion": "1.0.0",
+            "storeUrl": "https://apps.apple.com/app/idYOUR_APP_ID"
+        }
+    })
+
 if __name__ == '__main__': app.run(debug=True, port=8080)
